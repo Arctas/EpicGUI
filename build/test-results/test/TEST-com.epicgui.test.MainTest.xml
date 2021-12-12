@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.epicgui.test.MainTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-11-20T11:15:32" hostname="fabian" time="1.938">
+  <properties/>
+  <testcase name="test()" classname="com.epicgui.test.MainTest" time="1.938"/>
+  <system-out><![CDATA[[Test worker] [12:15:34] (MinecraftServer.start) - INFO - Starting Minestom server.
+[Test worker] [12:15:34] (MinecraftServer.start) - INFO - Extensions loaded in 21.21ms
+[Test worker] [12:15:34] (MinecraftServer.start) - INFO - Minestom server started successfully.
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

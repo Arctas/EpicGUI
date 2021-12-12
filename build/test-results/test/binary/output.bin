@@ -1,0 +1,3 @@
+T[Test worker] [12:15:34] (MinecraftServer.start) - INFO - Starting Minestom server.
+W[Test worker] [12:15:34] (MinecraftServer.start) - INFO - Extensions loaded in 21.21ms
+`[Test worker] [12:15:34] (MinecraftServer.start) - INFO - Minestom server started successfully.
