@@ -59,7 +59,7 @@ public class EpicGUI {
 
                     for (Component component : components) {
                         if (component.getOccupiedSlots().contains(slot)) {
-                            if(component.canPlayerTakeOutOfInventory()) e.setCancelled(true);
+                            if(!component.canPlayerTakeOutOfInventory()) e.setCancelled(true);
                             if (component.getComponentClickListener() != null)
                                 component.getComponentClickListener().onClick(new ComponentClickEvent(e, this));
                         }

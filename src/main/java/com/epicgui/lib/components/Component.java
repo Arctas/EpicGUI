@@ -47,7 +47,6 @@ public abstract class Component {
                 inventory.setItemStack(basePosition + j + (i * 9), itemStack);
             }
         }
-        System.out.println(basePosition);
 
         return inventory;
     }

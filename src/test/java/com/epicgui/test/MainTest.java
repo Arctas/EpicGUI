@@ -56,18 +56,16 @@ public class MainTest {
                 ButtonComponent testComponent = new ButtonComponent(0, 0, 2, 2, ItemStack.of(Material.STONE_HOE));
                 testComponent.setComponentClickListener(e -> {
                     e.cancel();
-                    System.out.println("prompting player");
+                    e.getPlayer().sendMessage("Enter something in chat:");
                     e.promptPlayerInChat(event -> {
-                        e.getPlayer().sendMessage("You sent: " + event.getResult());
-
+                        event.getPlayer().sendMessage("You sent: " + event.getResult());
                     });
-
                 });
-
-                gui.addComponent(new TextComponent(0, 5, Material.ACACIA_BOAT, 1, Component.text("lol"), Component.text("lol")));
-
                 gui.addComponent(testComponent);
-                gui.addComponent(new ButtonComponent(2, 0, 2, 2, ItemStack.of(Material.GOLD_BLOCK)));
+
+                gui.addComponent(new TextComponent(0, 5, Material.ACACIA_BOAT, Component.text("Info"), Component.text("Press here for more info.")).canPlayerTakeOutOfInventory(false));
+                gui.addComponent(new StaticComponent(2, 0, 2, 2, ItemStack.of(Material.GOLD_BLOCK)).canPlayerTakeOutOfInventory(false));
+
                 gui.open(sender.asPlayer());
             });
         }
