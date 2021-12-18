@@ -1,5 +1,7 @@
 plugins {
-    id 'java'
+    id 'java-library'
+    id 'maven-publish'
+    id 'idea'
 }
 
 group 'org.example'
@@ -15,7 +17,7 @@ dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
 
-    implementation 'com.github.Minestom:Minestom:cca614fea8'
+    implementation 'com.github.Minestom:Minestom:1a604b7b91'
 }
 
 test {
