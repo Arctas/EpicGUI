@@ -4,7 +4,7 @@ plugins {
     id 'idea'
 }
 
-group 'org.example'
+group 'eu.arctas'
 version '1.0-SNAPSHOT'
 
 repositories {
@@ -27,5 +27,13 @@ test {
 java {
     toolchain {
         languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+        }
     }
 }
